@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StudioFlow · Privacidad</title>
+<meta name="description" content="StudioFlow: aplicación de escritorio para cotizaciones, cuentas de cobro y facturas. Política de privacidad y uso de Google Drive.">
+<style>
+  :root { --fondo:#000; --tarjeta:#0d0d0f; --linea:#27272a; --texto:#e4e4e7; --suave:#a1a1aa; --marca:#9B2ABB; --marca-clara:#c46be0; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--fondo); color:var(--texto); font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:48px 16px 64px; }
+  header { display:flex; align-items:center; gap:14px; margin-bottom:28px; }
+  .logo { width:44px; height:44px; border-radius:12px; background:var(--marca); display:grid; place-items:center; font-weight:700; font-size:20px; color:#fff; flex:none; }
+  h1 { font-size:28px; line-height:1.2; margin:0; color:#fff; }
+  header p { margin:2px 0 0; color:var(--suave); font-size:14px; }
+  section { background:var(--tarjeta); border:1px solid var(--linea); border-radius:16px; padding:24px; margin-top:16px; }
+  h2 { font-size:18px; margin:0 0 8px; color:#fff; }
+  p, li { color:var(--texto); }
+  ul { padding-left:20px; margin:8px 0 0; }
+  li + li { margin-top:6px; }
+  a { color:var(--marca-clara); }
+  .nota { color:var(--suave); font-size:14px; }
+  footer { margin-top:32px; color:var(--suave); font-size:13px; text-align:center; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="logo" aria-hidden="true">S</div>
+    <div>
+      <h1>StudioFlow</h1>
+      <p>Cotizaciones, cuentas de cobro y facturas para estudios creativos</p>
+    </div>
+  </header>
+
+  <section id="que-es">
+    <h2>Qué es StudioFlow</h2>
+    <p>StudioFlow es una aplicación de escritorio para Windows que permite crear cotizaciones, cuentas de cobro y facturas, registrar pagos y llevar la cartera de un estudio. Toda la información se guarda en el propio computador del usuario.</p>
+  </section>
+
+  <section id="privacidad">
+    <h2>Política de privacidad</h2>
+    <p class="nota">Última actualización: 19 de noviembre de 2026</p>
+    <ul>
+      <li><strong>Tus datos se quedan en tu equipo.</strong> Clientes, servicios, documentos y pagos se guardan en una base de datos local, en la carpeta <em>Documentos\StudioFlow</em>. StudioFlow no tiene servidores propios y no envía esa información a nadie.</li>
+      <li><strong>Sin publicidad ni rastreo.</strong> La aplicación no usa analítica, cookies de seguimiento ni servicios publicitarios, y no vende ni comparte datos con terceros.</li>
+      <li><strong>Respaldos en Google Drive (opcional).</strong> Si conectas tu cuenta de Google, StudioFlow sube a tu propio Google Drive las copias de seguridad que crea, dentro de la carpeta “StudioFlow Respaldos”.</li>
+    </ul>
+  </section>
+
+  <section id="google">
+    <h2>Uso de los datos de Google</h2>
+    <ul>
+      <li>StudioFlow solicita únicamente el permiso <strong>“ver, editar, crear y borrar solo los archivos de Google Drive que usas con esta app”</strong> (<code>drive.file</code>). No puede ver ni modificar ningún otro archivo de tu Drive.</li>
+      <li>También lee tu dirección de correo para mostrar con qué cuenta estás conectado.</li>
+      <li>Con ese permiso, la aplicación crea la carpeta de respaldos, sube cada copia, comprueba que llegó completa, la descarga si quieres restaurarla y envía a la papelera las copias antiguas o las que tú elimines.</li>
+      <li>La autorización se guarda cifrada en tu computador con la protección de Windows. No se envía a ningún otro lugar.</li>
+      <li>El uso que StudioFlow hace de la información recibida de las API de Google cumple la <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Política de datos de usuario de los servicios de las API de Google</a>, incluidos los requisitos de uso limitado.</li>
+    </ul>
+  </section>
+
+  <section id="control">
+    <h2>Tu control</h2>
+    <ul>
+      <li>Puedes desconectar Google Drive cuando quieras desde <em>Datos y respaldos → Desconectar</em>, o desde <a href="https://myaccount.google.com/permissions" rel="noopener">los permisos de tu cuenta de Google</a>. Los respaldos que ya están en tu Drive siguen siendo tuyos y no se borran.</li>
+      <li>Para eliminar todos tus datos basta con borrar la carpeta <em>Documentos\StudioFlow</em> y, si lo deseas, la carpeta “StudioFlow Respaldos” de tu Drive.</li>
+    </ul>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Para preguntas sobre esta política, abre una consulta en <a href="https://github.com/mendyapex/studioflow/issues" rel="noopener">github.com/mendyapex/studioflow/issues</a>.</p>
+  </section>
+
+  <footer>StudioFlow</footer>
+</main>
+</body>
+</html>
